@@ -1,0 +1,13 @@
+CREATE DATABASE survey_db;
+
+USE survey_db;
+
+CREATE TABLE responses (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    feedback TEXT NOT NULL,
+    rating INT NOT NULL,
+    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
